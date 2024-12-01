@@ -4,7 +4,6 @@ import { scale, verticalScale, moderateScale } from 'react-native-size-matters';
 
 import imagepath from '../../constants/imagepath'
 import My_btn from '@/src/components/atoms/My_btn';
-import { render } from 'react-dom';
 import { router } from 'expo-router';
 
 
