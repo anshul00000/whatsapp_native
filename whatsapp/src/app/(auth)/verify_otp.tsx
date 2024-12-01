@@ -9,13 +9,13 @@ import { scale, verticalScale, moderateScale } from 'react-native-size-matters';
 
 import OTPInput from "@codsod/react-native-otp-input";
 import { router } from 'expo-router';
-import { storage } from '@/src/utils/utils';
+// import { storage } from '@/src/utils/utils';
 
 
 const verify_otp = () => {
 
   const [otp, setOTP] = useState("");
-  const [tooken_, settooken] = useState(storage.getString('tooken') || "cool");
+  const [tooken_, settooken] = useState("cool");
 
 
 
@@ -28,13 +28,16 @@ const verify_otp = () => {
 
   const verify=()=>{
     alert("OTP is = "+otp);
-    storage.set('tooken', 'ANSHUL') ;
+
+    settooken(otp);
+
+    // storage.set('tooken', 'ANSHUL') ;
 
   }
 
   const clear=()=>{
     // alert("OTP is = "+otp);
-    storage.delete('tooken') ;
+    // storage.delete('tooken') ;
 
     settooken("");
 

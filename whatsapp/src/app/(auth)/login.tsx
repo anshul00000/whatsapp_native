@@ -85,15 +85,15 @@ const login =()=> {
 
           <View style={styles.btn}>
 
-            <My_btn title="Next" onPress={next}/>
+            {/* <My_btn title="Next" onPress={next}/> */}
 
           </View>
 
         </View>
-
+{/* 
 {
 visible && <CountryPicker withFilter  visible={true}  onClose={()=>setvisible(false)} onSelect={(e)=>{setcountrycode(e.callingCode) , setcountryname(e.name)}} />
-}
+} */}
 
 
       </SafeAreaView>
